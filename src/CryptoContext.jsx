@@ -10,7 +10,7 @@ const CryptoContext = ({ children }) => {
         if (currency === 'INR') setSymbol('₹')
 
         else if (currency === 'USD') setSymbol('$')
-        console.log({ currency })
+        // console.log({ currency })
     }, [currency])
 
 

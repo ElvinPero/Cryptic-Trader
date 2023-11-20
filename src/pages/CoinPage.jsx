@@ -17,12 +17,12 @@ const CoinPage = () => {
         const fetchCoin = async () => {
             try {
                 setCpload(true);
-                console.log(id);
+                // console.log(id);
                 const response = await fetch(SingleCoin(id));
                 if (response.ok) {
                     const result = await response.json();
                     setCoin(result);
-                    console.log(result);
+                    // console.log(result);
                 }
             } catch (e) {
                 console.log(e);

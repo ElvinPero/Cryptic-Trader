@@ -26,7 +26,7 @@ const CoinChart = ({ coin }) => {
                 if (response.ok) {
                     const result = await response.json();
                     setHistoricalData(result.prices);
-                    console.log(result.prices);
+                    // console.log(result.prices);
                 }
             } catch (e) {
                 console.log(e);
