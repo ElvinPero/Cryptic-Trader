@@ -22,14 +22,14 @@ const CoinsTable = () => {
             setLoading(true);
             try {
                 // const response = await fetch(`https://api.binance.com/`);
-                console.log(currency)
+
                 const response = await fetch(CoinList(currency));
                 const result = await response.json();
 
                 setCoins(result);
-                console.log(result);
+
             } catch (e) {
-                console.log(e);
+
             }
             finally {
                 setLoading(false);
