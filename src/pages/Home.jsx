@@ -2,7 +2,7 @@ import React from 'react'
 import { Trending } from '../components/Trending'
 import CoinsTable from '../components/CoinsTable'
 import AnchorLink from "react-anchor-link-smooth-scroll";
-
+import Graph from "../assets/homegif.gif"
 const Home = () => {
 
     return (
@@ -47,7 +47,8 @@ const Home = () => {
                     </div>
                 </section>
 
-                <img className='w-max md:w-1/2' src="https://blog.rollbit.com/content/images/2021/06/ee1d65b02803a5b27b21ef49ea03ca93.gif" alt="" />
+                <img className='w-max md:w-1/2' src={Graph} alt="" />
+{/*                 <img className='w-max md:w-1/2' src="https://blog.rollbit.com/content/images/2021/06/ee1d65b02803a5b27b21ef49ea03ca93.gif" alt="" /> */}
 
             </div>
 
